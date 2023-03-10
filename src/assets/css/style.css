@@ -437,7 +437,7 @@ li.mn-head {
   cursor: auto !important;
 }
 .top-menu {
-  display: none;
+  display: flex;
   float: right;
   margin-top: 5px;
 }

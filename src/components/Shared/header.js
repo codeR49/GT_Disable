@@ -514,7 +514,7 @@ const Header = () => {
 								</li>
 							</ul>
 						</div>
-						<div class="col-lg-9 col-sm-12" style={{display:"none"}}>
+						<div class="col-lg-9 col-sm-12" >
 							<ul class="nav justify-content-end">
 								<li class="nav-item" onClick={() => initBuySell('/buyfilter')}>
 									<a class="nav-link cp nav-text-color">Buy</a>
@@ -540,9 +540,9 @@ const Header = () => {
 								<li class="nav-item" onClick={() => initBuySell('/getservice')}>
 									<a class="nav-link cp nav-text-color">Get Service</a>
 								</li>
-								<li class="nav-item">
+								{/* <li class="nav-item">
 									<a href="https://forum.toolgrazp.net" class="nav-link cp nav-text-color">Forum</a>
-								</li>
+								</li> */}
 
 								{userDetails.user && (userDetails.user.appUserType === "INDIVIDUAL" && !userDetails.user.adminToFFlStore) && <li class="nav-item">
 									<Link
