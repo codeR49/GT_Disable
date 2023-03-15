@@ -66,9 +66,7 @@ h5 {
 }
 p {
   margin-bottom: 20px;
-  line-height: 54px;
-  font-size: larger;
-  font-weight: bold;
+  line-height: 24px;
 }
 .container {
   max-width: 1170px;
@@ -1222,7 +1220,7 @@ x sigin/signup popup
   opacity: 1;
 }
 .cd-signin-modal .cd-signin-modal__container {
-  width: 40%;
+  width: 55%;
 }
 .cd-signin-modal__container {
   position: relative;

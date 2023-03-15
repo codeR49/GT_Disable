@@ -38,9 +38,9 @@ const Login = ({ setLoginModel }) => {
 					<div className="col-lg-5 desktop-login-head">
 						<div className="login-left-area">
                         {modalTab === "login" && <>
-                            {/* <h2>Login</h2>
-							<p>Login to manage your Wishlist, Orders, Bids, Trades, Listings, Schedules & more.</p> */}
-							<p className="text-center"><img src="https://img.freepik.com/free-vector/creative-coming-soon-teaser-background_23-2148894969.jpg?w=900&t=st=1678429033~exp=1678429633~hmac=8cb1aae4d138e7b536c75964784ac91609fa98d7ff45a65c3d079e2b172e587c" className="img-fluid" /></p>
+                            <h2>Login</h2>
+							<p>Login to manage your Wishlist, Orders, Bids, Trades, Listings, Schedules & more.</p>
+							<p className="text-center"><img src="images/login-comp.png" className="img-fluid" /></p>
                         </>}
                         {modalTab === "signUp" && <>
                             <h2>Create Account</h2>
@@ -270,8 +270,12 @@ const LoginPage = ({ setModalTab, setLoginModel, mailVerifyStatus }) => {
     }, [])
 
 	return (<div className=" js-signin-modal-block" >
-		<h2 className='text-center'>Coming soon</h2>
-		<p className="log-cap text-center pt-2" style={{color:"#487916"}}>Check back on 3rd April</p>
+		<h2>Welcome</h2>
+		<p className="log-cap" style={{
+  
+    fontSize: "20px",
+    color: "red",
+    fontWeight: 900}}>Comming Soon....</p>
 		{/* <ul className="loginSocial">
 			<li>
                 <GLogin {...{ setLoginModel,setIsLogin }} />
@@ -280,9 +284,90 @@ const LoginPage = ({ setModalTab, setLoginModel, mailVerifyStatus }) => {
                 <FLogin {...{ setLoginModel,setIsLogin }} />
             </li>
             <p>Or login with email</p>
-		</ul>
-
-		<p className="cd-signin-modal__bottom-message js-signin-modal-trigger">Don’t have an account? <a onClick={() => setModalTab("signUp")}>Sign Up</a></p> */}
+		</ul> */}
+        {
+            hasInvalidCredential 
+            && <div class="alert alert-danger mt20" role="alert">
+                {/* Please enter valid username or password */}
+                {errorMessage}
+            </div>
+        }
+        {
+            ((mailVerifyStatus?.email && mailVerifyStatus?.emailVerified === false && !errorMessage))
+            && <div class="alert alert-success mt20" role="alert">
+                    <p>Your signup was successful! Welcome to Guntraderz <br></br>
+                    Before you login, please check your registered email to verify your account.</p>
+                    <p><a href={mailVerifyStatus.emailVerificationLink}>Verify Email</a></p>
+            </div>
+        }
+		<Formik
+			validationSchema={schema}
+            initialValues={{
+                email:'',
+                password: '',
+                rememberMe: false
+            }}
+			onSubmit={onLoginSubmitted}>
+            {({ handleSubmit, isSubmitting, handleChange, touched, errors, values, isValid, dirty, handleReset }) => (
+				<form onSubmit={handleSubmit}>
+                    <Form.Group>
+                        <Form.Label><span>Email</span></Form.Label>
+                        <InputGroup>
+                            {/* <InputGroup.Prepend>
+                                <InputGroup.Text>
+                                    <label className="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" htmlFor="signin-email"></label>
+                                </InputGroup.Text>
+                            </InputGroup.Prepend> */}
+                            <Field 
+                                name="email" 
+                                className="form-control " 
+                                placeholder="Enter your email" 
+                                onKeyUp={() => {hasInvalidCredential && setHasInvalidCredential(false)}}
+                            />
+                        </InputGroup>
+                        <ErrorMessage component="span" name="email" className="text-danger mb-2 small-text" />
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label><span>Password</span></Form.Label>
+                        <InputGroup>
+                            {/* <InputGroup.Prepend>
+                                <InputGroup.Text>
+                                    <label className="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" htmlFor="signin-password"></label>
+                                </InputGroup.Text>
+                            </InputGroup.Prepend> */}
+                            <Field 
+                                name="password" 
+                                className="form-control " 
+                                placeholder="Enter your password" 
+                                type="password" 
+                                id="login-password"
+                                onKeyUp={() => {hasInvalidCredential && setHasInvalidCredential(false)}}
+                            />
+                            <InputGroup.Append>
+                                <InputGroup.Text id="basic-addon2"> <PasswordEye id="login-password"/></InputGroup.Text>
+                            </InputGroup.Append>
+                        </InputGroup>
+                        <ErrorMessage component="span" name="password" className="text-danger mb-2 small-text" />
+                    </Form.Group>
+                    {/* <div className="jcb">
+                        <p className="cd-signin-modal__bottom-message js-signin-modal-trigger f-RequestVerification p-0">{isNotVerifiedEmail && <a onClick={() => setModalTab("request-link")}>Request Verification Link</a>}</p>
+                        <p className="cd-signin-modal__bottom-message js-signin-modal-trigger f-passArea p-0"><a onClick={() => setModalTab("reset")} id="gt-forgot-password">Forgot your password?</a></p>
+                    </div> */}
+					{/* <Form.Group>
+                        <Form.Check
+                        name="rememberMe"
+                        label="Remember me"
+                        onChange={handleChange}
+                        isInvalid={!!errors.rememberMe}
+                        feedback={errors.rememberMe}
+                        />
+                    </Form.Group> */}
+					{/* <SubmitField label="Login" id="gt-login" disabled={!isValid || !dirty} /> */}
+                    <SubmitField label="Login" id="gt-login" disabled />
+				</form>
+			)}
+		</Formik>
+		<p className="cd-signin-modal__bottom-message js-signin-modal-trigger">Don’t have an account? <a onClick={() => setModalTab("signUp")}>Sign Up</a></p>
 	</div>)
     
 }
