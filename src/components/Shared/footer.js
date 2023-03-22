@@ -45,7 +45,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div class="row mobile-off">
-                        <div class="col-lg-2 col-sm-12 fst-footer">
+                        {/* <div class="col-lg-2 col-sm-12 fst-footer">
                             <h4>CATEGORY</h4>
                             <ul class="footer-menu">
                                 {
@@ -76,7 +76,7 @@ const Footer = () => {
                                     })
                                 }
                             </ul>
-                        </div>
+                        </div> */}
                         <div class="col-lg-2 col-sm-12 snd-footer">
                             <h4>COMPANY</h4>
                             <ul class="footer-menu">
@@ -106,7 +106,7 @@ const Footer = () => {
                     </div>
 
                     <div class="row flex-wrap-footer desktop-off">
-                        <div class="col-sm-6 fst-footer footer-fst">
+                        {/* <div class="col-sm-6 fst-footer footer-fst">
                             <h4>CATEGORY</h4>
                             <ul class="footer-menu">
                                 {
@@ -137,7 +137,7 @@ const Footer = () => {
                                     })
                                 }
                             </ul>
-                        </div>
+                        </div> */}
                         <div class="col-sm-6 snd-footer footer-snd">
                             <h4>COMPANY</h4>
                             <ul class="footer-menu">

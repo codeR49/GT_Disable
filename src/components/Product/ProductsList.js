@@ -17,7 +17,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 const ProductsList = props => {
     const history = useHistory();
     const [data, setData] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+    // const [isLoading, setIsLoading] = useState(false);
     const Toast = useToast();
     const spinner = useContext(Spinner);
     const userDetails = useAuthState();
@@ -158,7 +158,7 @@ const ProductsList = props => {
         getWishList(userDetails.user.sid);
         getMyListing(userDetails.user.sid);
         const fetchData = async () => {
-            setIsLoading(true);
+            // setIsLoading(true);
             const payload = getMyCategory();
             spinner.show("Please wait...");
             (((_.isEqual(props.view, 'Mostly Viewed') || _.isEqual(props.view, 'Recently Viewed')) && ApiService.getViewListing)
@@ -179,7 +179,7 @@ const ProductsList = props => {
                         }
                     }
                 ).finally(() => {
-                    setIsLoading(false);
+                    // setIsLoading(false);
                     spinner.hide();
                 });
         };
@@ -207,7 +207,8 @@ const ProductsList = props => {
                 <div class="row">
                     <div class="col-lg-12 mb-4">
                         <div id="demo-pranab">
-                            {!isLoading && <OwlCarousel id="owl-new-arrivals" className='owl-theme carousel-container' loop nav autoplay autoplayHoverPause margin={20} items={5} autoplayTimeout={2000} responsive={{
+                            
+                            {<OwlCarousel id="owl-new-arrivals" className='owl-theme carousel-container' loop nav autoplay autoplayHoverPause margin={20} items={5} autoplayTimeout={2000} responsive={{
                                 0: {
                                     margin: 5,
                                     items: 1
@@ -317,9 +318,9 @@ const ProductsList = props => {
                                     </Link>
                                 })}
                             </OwlCarousel>}
-                            {
+                            {/* {
                                 !isLoading && !data.length && <div class="gunt-error">No Data Found</div>
-                            }
+                            } */}
                         </div>
                     </div>
                 </div>

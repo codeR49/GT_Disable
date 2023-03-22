@@ -275,7 +275,7 @@ const LoginPage = ({ setModalTab, setLoginModel, mailVerifyStatus }) => {
   
     fontSize: "20px",
     color: "red",
-    fontWeight: 900}}>Comming Soon....</p>
+    fontWeight: 900}}>Coming Soon....</p>
 		{/* <ul className="loginSocial">
 			<li>
                 <GLogin {...{ setLoginModel,setIsLogin }} />
