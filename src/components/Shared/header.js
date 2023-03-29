@@ -740,6 +740,7 @@ const Header = () => {
 								<div id="search">
 									<InputGroup className="">
 										<input
+										disabled
 											size="40"
 											type="text"
 											className="form-control"
@@ -754,6 +755,7 @@ const Header = () => {
 										/>
 										<InputGroup.Append className="top-search-icon">
 											<Button
+											disabled
 												id="header-search-btn"
 												variant="outlined"
 												onClick={() => {

@@ -161,7 +161,7 @@ const Home = () => {
     <img src='https://toolgrazp.net/images/logo.svg' className='img-fluid'/>
     <hr/>
   <span class="title">Are you over 21?</span>
-  <span>Thank you for your interest in toolgrazp.net
+  <span>Thank you for your interest in guntraderz.com <br/>
 Our site is for individuals at least 21 years of age.</span>
   <button class="yes" onClick={() => setContent(false)}>Yes</button>
   

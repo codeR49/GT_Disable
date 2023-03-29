@@ -77,7 +77,7 @@ const Footer = () => {
                                 }
                             </ul>
                         </div> */}
-                        <div class="col-lg-2 col-sm-12 snd-footer">
+                        <div class="col-lg-4 col-sm-12 snd-footer">
                             <h4>COMPANY</h4>
                             <ul class="footer-menu">
                                 <li><a>About us</a></li>
@@ -88,7 +88,7 @@ const Footer = () => {
                                 <li><a>Shipping policy</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-2 col-sm-12 trd-footer">
+                        <div class="col-lg-4 col-sm-12 trd-footer">
                             <h4>HELP & SUPPORT</h4>
                             <ul class="footer-menu">
                                 <li><a>Customer Care</a></li>
@@ -98,7 +98,7 @@ const Footer = () => {
                                 <li><a>Security Policy</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-2 col-sm-12 offset-lg-4 fou-footer">
+                        <div class="col-lg-4 col-sm-12  fou-footer">
                             <h4>CONTACT US</h4>
                             <p>support@guntraderz.com</p>
                             {/* <p>+1 1234567890</p> */}
@@ -150,9 +150,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                    </div>
-
-                    <div class="row flex-wrap-footer desktop-off">
+                   
                         <div class="col-sm-6 trd-footer footer-trd">
                             <h4>HELP & SUPPORT</h4>
                             <ul class="footer-menu">
@@ -163,13 +161,13 @@ const Footer = () => {
                                 <li><a>Security Policy</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-6 fou-footer footer-fou">
+                       
+                    </div>
+ <div class="col-sm-4 fou-footer footer-fou desktop-off">
                             <h4>CONTACT US</h4>
                             <p>support@guntraderz.com</p>
                             {/* <p>+1 1234567890</p> */}
                         </div>
-                    </div>
-
                     
 
                 </div>
