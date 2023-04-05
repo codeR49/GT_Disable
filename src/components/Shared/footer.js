@@ -150,7 +150,7 @@ const Footer = () => {
  
     <div class="modal-content">
     <div class="modal-header">
-        <h5 class="modal-title fw600" id="exampleModalLabel">SHIPPING</h5>
+        <h5 class="modal-title fw600" id="exampleModalLabel">SHIPPING POLICY</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -185,7 +185,7 @@ const Footer = () => {
  
     <div class="modal-content">
     <div class="modal-header">
-        <h5 class="modal-title fw600" id="exampleModalLabel">RETURNS</h5>
+        <h5 class="modal-title fw600" id="exampleModalLabel">RETURN POLICY</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
