@@ -95,6 +95,7 @@ const TermAndCondition = ({
     }, [])
 
     return (<>
+    
         <Modal {...{ show, setShow, onClickCloseIcon }} className="termCondition-modal">
             <div className="termCondition-header text-left">
                 <span className="fw600">{headerLabel}</span>
