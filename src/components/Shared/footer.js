@@ -288,11 +288,7 @@ const Footer = () => {
                             <ul class="footer-menu">
                                 <li><a  data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>About us</a></li>
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Contact us</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Privacy policy</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg" style={{cursor:"pointer"}}>Terms & conditions</a></li>
-
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg2" style={{cursor:"pointer"}} >Return policy</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg1" style={{cursor:"pointer"}} >Shipping policy</a></li>
+                               
                             </ul>
                         </div>
                         <div class="col-lg-4 col-sm-12 trd-footer">
@@ -301,7 +297,11 @@ const Footer = () => {
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Customer Care</a></li>
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>FAQ’s</a></li>
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Resources</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg" style={{cursor:"pointer"}}>Terms & Conditions</a></li>
+                                <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Privacy policy</a></li>
+                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg" style={{cursor:"pointer"}}>Terms & conditions</a></li>
+
+                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg2" style={{cursor:"pointer"}} >Return policy</a></li>
+                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg1" style={{cursor:"pointer"}} >Shipping policy</a></li>
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Security Policy</a></li>
                             </ul>
                         </div>
@@ -350,10 +350,7 @@ const Footer = () => {
                             <ul class="footer-menu">
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>About us</a></li>
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Contact us</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Privacy policy</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg" style={{cursor:"pointer"}}>Terms & conditions</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg2" style={{cursor:"pointer"}} >Return policy</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg1" style={{cursor:"pointer"}} >Shipping policy</a></li>
+                                
                             </ul>
                         </div>
 
@@ -364,7 +361,11 @@ const Footer = () => {
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Customer Care</a></li>
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>FAQ’s</a></li>
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Resources</a></li>
-                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg" style={{cursor:"pointer"}}>Terms & Conditions</a></li>
+                                <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Privacy policy</a></li>
+                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg" style={{cursor:"pointer"}}>Terms & conditions</a></li>
+
+                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg2" style={{cursor:"pointer"}} >Return policy</a></li>
+                                <li><a data-toggle="modal" data-target=".bd-example-modal-lg1" style={{cursor:"pointer"}} >Shipping policy</a></li>
                                 <li><a data-toggle="modal" data-target=".bd-example-modal-sm"style={{cursor:"pointer"}}>Security Policy</a></li>
                             </ul>
                         </div>

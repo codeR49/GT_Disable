@@ -486,7 +486,7 @@ function ProductDetail(props) {
                                                         || listings.some((res) => res.appUser.sid !== product.appUsersSid))
                                                     ? <>
                                                         <ul>
-                                                            {product.sell && <li onClick={() => { conformModel('buy') }}><a className="proBtn buy-btn proBtn-hover">Buy Now</a></li>}
+                                                            {product.sell && <li onClick={() => { conformModel('buy') }} ><a className="proBtn buy-btn proBtn-hover" >Buy Now</a></li>}
                                                             {product.trade && <li onClick={() => conformModel('trade')}><a className="proBtn trade-offer-btn proBtn-hover">{!_.isEmpty(product.trade_with_listing_type) ? "Offer Specific Trade" : "Offer Trade"}</a></li>}
                                                             {product.auction && <li onClick={() => conformModel('bid')}><a className="proBtn bid-btn bid-btn-hover">Make a Bid</a></li>}
                                                         </ul>
@@ -496,10 +496,10 @@ function ProductDetail(props) {
                                                         {product.trade && <li><a onClick={() => Toast.error({ message: "This is your own listing item you can't trade", time: 2000 })} className="proBtn trade-offer-btn proBtn-hover">{!_.isEmpty(product.trade_with_listing_type) ? "Offer Specific Trade" : "Offer Trade"}</a></li>}
                                                         {product.auction && <li><a onClick={() => Toast.error({ message: "This is your own listing item you can't bid", time: 2000 })} className="proBtn bid-btn bid-btn-hover">Make a Bid</a></li>}
                                                     </ul>
-                                                    : <ul>
-                                                        {product.sell && <li onClick={() => setLoginModel(true)}><a className="proBtn buy-btn proBtn-hover">Buy Now</a></li>}
-                                                        {product.trade && <li><a onClick={() => setLoginModel(true)} className="proBtn trade-offer-btn proBtn-hover">{!_.isEmpty(product.trade_with_listing_type) ? "Offer Specific Trade" : "Offer Trade"}</a></li>}
-                                                        {product.auction && <li><a onClick={() => setLoginModel(true)} className="proBtn bid-btn bid-btn-hover">Make a Bid</a></li>}
+                                                    : <ul >
+                                                        {product.sell && <li ><a className="proBtn buy-btn proBtn-hover"  >Buy Now</a></li>}
+                                                        {product.trade && <li><a  className="proBtn trade-offer-btn proBtn-hover">{!_.isEmpty(product.trade_with_listing_type) ? "Offer Specific Trade" : "Offer Trade"}</a></li>}
+                                                        {product.auction && <li><a  className="proBtn bid-btn bid-btn-hover">Make a Bid</a></li>}
                                                     </ul>
                                             }
                                         </div>
@@ -873,14 +873,14 @@ function ProductDetail(props) {
                                     listings
                                         && (listings.length === 0 || listings.some((res) => res.appUser.sid !== product.appUsersSid))
                                         ? <ul>
-                                            {product.sell && <li onClick={() => { conformModel('buy') }}><a className="proBtn buy-btn proBtn-hover">Buy Now</a></li>}
-                                            {product.trade && <li onClick={() => conformModel('trade')}><a className="proBtn trade-offer-btn proBtn-hover">{!_.isEmpty(product.trade_with_listing_type) ? "Offer Specific Trade" : "Offer Trade"}</a></li>}
-                                            {product.auction && <li onClick={() => conformModel('bid')}><a className="proBtn bid-btn bid-btn-hover">Make a Bid</a></li>}
+                                            {product.sell && <li ><a className="proBtn buy-btn proBtn-hover">Buy Now</a></li>}
+                                            {product.trade && <li ><a className="proBtn trade-offer-btn proBtn-hover">{!_.isEmpty(product.trade_with_listing_type) ? "Offer Specific Trade" : "Offer Trade"}</a></li>}
+                                            {product.auction && <li ><a className="proBtn bid-btn bid-btn-hover">Make a Bid</a></li>}
                                         </ul>
                                         : <ul>
-                                            {product.sell && <li onClick={() => Toast.error({ message: "This is your own listing item you can't buy", time: 2000 })}><a className="proBtn buy-btn proBtn-hover">Buy Now</a></li>}
-                                            {product.trade && <li><a onClick={() => Toast.error({ message: "This is your own listing item you can't trade", time: 2000 })} className="proBtn trade-offer-btn proBtn-hover">{!_.isEmpty(product.trade_with_listing_type) ? "Offer Specific Trade" : "Offer Trade"}</a></li>}
-                                            {product.auction && <li><a onClick={() => Toast.error({ message: "This is your own listing item you can't bid", time: 2000 })} className="proBtn bid-btn bid-btn-hover">Make a Bid</a></li>}
+                                            {product.sell && <li ><a className="proBtn buy-btn proBtn-hover">Buy Now</a></li>}
+                                            {product.trade && <li><a  className="proBtn trade-offer-btn proBtn-hover">{!_.isEmpty(product.trade_with_listing_type) ? "Offer Specific Trade" : "Offer Trade"}</a></li>}
+                                            {product.auction && <li><a className="proBtn bid-btn bid-btn-hover">Make a Bid</a></li>}
                                         </ul>
                                 }
                             </div>

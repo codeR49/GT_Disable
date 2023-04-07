@@ -1159,7 +1159,8 @@ const Header = () => {
 								{categories.map((category, i) => {
 									return (
 										<li key={i} class="nav-item">
-											<Link
+											<Link 
+											style={{pointerEvents:"none"}}
 												class="nav-link"
 												to={{
 													pathname: "/search",
