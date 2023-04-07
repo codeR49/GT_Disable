@@ -106,14 +106,7 @@ const Home = () => {
             }, 2000)
         }
     }, [])
-  
-    const routeChange = () =>{ 
-      let path = `https://www.google.com/`; 
-      Redirect(path);
-    }
-  
-    console.log(userDetails);
-    console.log(location);
+
     const Modal = ({ show, children }) => {
         const showHideClassName = show ? "modal d-block" : "modal d-none";
 
@@ -138,45 +131,24 @@ const Home = () => {
             {
                 content ?
 
-              
-// <div class="card text-center">
-// <div class="card-header" style={{fontWeight:"700", fontSize:"20px"}}>
-// Thank you for your interest in toolgrazp.net
-// </div>
-// <div class="card-body">
-//   <h5 class="card-title">Our site is for individuals at least 21 years of age.</h5>
-//   <p class="card-text" style={{fontSize:"20px"}}>Are you at least 21 years old?</p>
- 
-//   <button class="btn btn-primary mx-3" onClick={() => setContent(false)}>Yes</button>
-//   <a href="https://www.google.com/" type="button" class="btn btn-primary">No</a>
-  
-// </div>
-// <div class="card-footer text-muted">
+                    <div id="age-verify">
+                        <div class="window">
+                            <img src='https://toolgrazp.net/images/logo.svg' className='img-fluid' />
+                            <hr />
+                            <span class="title">Are you over 21?</span>
+                            <span>Thank you for your interest in guntraderz.com <br />
+                                Our site is for individuals at least 21 years of age.</span>
+                            <button class="yes" onClick={() => setContent(false)}>Yes</button>
 
-// </div>
-// </div>
+                            <button class="no" onClick={() => window.location.replace('https://www.google.com/')}>No</button>
+                            <div class="underBox">
+                                <span class="title">Sorry!</span>
+                                <span>You need to be at least 21 to visit our website.</span>
+                                {/* <button class="back" onclick="goBack()">Go Back</button> */}
+                            </div>
 
-<div id="age-verify">
-<div class="window">
-    <img src='https://toolgrazp.net/images/logo.svg' className='img-fluid'/>
-    <hr/>
-  <span class="title">Are you over 21?</span>
-  <span>Thank you for your interest in guntraderz.com <br/>
-Our site is for individuals at least 21 years of age.</span>
-  <button class="yes" onClick={() => setContent(false)}>Yes</button>
-  
-  <button class="no"  onClick={()=>window.location.replace('https://www.google.com/')}>No</button>
-  <div class="underBox">
-    <span class="title">Sorry!</span>
-    <span>You need to be at least 21 to visit our website.</span>
-    {/* <button class="back" onclick="goBack()">Go Back</button> */}
-  </div>
-
-</div>
-</div>
-
-
-                    
+                        </div>
+                    </div>
                     :
                     locationModel ?
 
@@ -197,15 +169,15 @@ Our site is for individuals at least 21 years of age.</span>
                             <div>
                                 <ProductsList view="Most Popular" />
                             </div>
-                            
-                                 <div>
-                                    <ProductsList view="Mostly Viewed" />
-                                </div>
-                            
+
                             <div>
-                                    <ProductsList view="Recently Viewed" />
-                                </div>
-                            
+                                <ProductsList view="Mostly Viewed" />
+                            </div>
+
+                            <div>
+                                <ProductsList view="Recently Viewed" />
+                            </div>
+
 
                             {
                                 isDisplay
@@ -220,7 +192,6 @@ Our site is for individuals at least 21 years of age.</span>
                         </Layout>
             }
         </>
-
 
     );
 }
