@@ -388,7 +388,7 @@ const ProductBanner = () => {
                         <div className="prod-banner-container" style={{backgroundImage: `url(${getMyImage(item)})`}}></div>
                         <Carousel.Caption>
                             <h1>{item.title}</h1>
-                            <Link to={{
+                            {/* <Link to={{
                                         pathname: "/product/" + item.sid,
                                         state:  {
                                             breadcrumb: [{
@@ -402,7 +402,7 @@ const ProductBanner = () => {
                                            ],
                                            itemInfo: item
                                         }
-                                      }} class="banner-btn" onClick={()=>{}}>Shop Now</Link>
+                                      }} class="banner-btn" onClick={()=>{}}>Shop Now</Link> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                 })
@@ -413,7 +413,7 @@ const ProductBanner = () => {
                         <div className="prod-banner-container" style={{backgroundImage: `url(${getMyImage(item)})`}}></div>
                         <Carousel.Caption>
                             <h1>{item.title}</h1>
-                            <Link to={{
+                            {/* <Link to={{
                                         pathname: "/product/" + item.sid,
                                         state:  {
                                             breadcrumb: [{
@@ -427,7 +427,7 @@ const ProductBanner = () => {
                                            ],
                                            itemInfo: item
                                         }
-                                      }} class="banner-btn" onClick={()=>{}}>Shop Now</Link>
+                                      }} class="banner-btn" onClick={()=>{}}>Shop Now</Link> */}
                         </Carousel.Caption>
                     </Carousel.Item>
                 })

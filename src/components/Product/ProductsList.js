@@ -548,6 +548,7 @@ const ProductsList = props => {
                                 !_.isEmpty(data) ?
                                  data.map((item, index) => {
                                     return <Link
+                                    style={{pointerEvents:"none"}}
                                         key={index}
                                         to={{
                                             pathname: "/product/" + item.sid,
@@ -640,6 +641,7 @@ const ProductsList = props => {
                                 :
                                 hardCodeData.map((item, index) => {
                                     return <Link
+                                    style={{pointerEvents:"none"}}
                                         key={index}
                                         to={{
                                             pathname: "/product/" + item.sid,
